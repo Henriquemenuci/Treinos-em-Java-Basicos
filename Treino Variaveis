@@ -1,0 +1,64 @@
+
+public class TestaVariaveis {
+
+	private String nome;
+	private int idade;
+	private boolean maiorIdade;
+
+	public TestaVariaveis() {
+
+	}
+
+	public TestaVariaveis(String nome, int idade) {
+		this.nome = nome;
+		this.idade = idade;
+
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public int getIdade() {
+		return idade;
+	}
+
+	public void validaIdade() {
+		if (idade > 17) {
+			maiorIdade = true;
+		}
+
+		else {
+			maiorIdade = false;
+		}
+	}
+
+	public void Mostrar() {
+		System.out.println(nome);
+
+		if (maiorIdade == true) {
+			System.out.println("Maior de Idade");
+		}
+
+		else {
+			System.out.println("Menor de Idade");
+		}
+
+	}
+}
+
+
+_________________________________________________________________
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		TestaVariaveis testaVariaveis = new TestaVariaveis("Henrique", 21);
+		testaVariaveis.validaIdade();
+		testaVariaveis.Mostrar();
+
+	}
+
+}
