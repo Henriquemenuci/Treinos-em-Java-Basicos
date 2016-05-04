@@ -1,0 +1,38 @@
+
+public class Laco {
+
+	private int numero;
+
+	public Laco() {
+
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public Laco(int numero) {
+		this.numero = numero;
+	}
+
+	public void tabuada() {
+		for (int i = 0; i <= 10; i++) {
+
+			System.out.println(numero + " X " + i + " = " + numero * i);
+		}
+	}
+
+}
+
+___________________________________________________________________
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		Laco laco = new Laco(43);
+		laco.tabuada();
+
+	}
+
+}
